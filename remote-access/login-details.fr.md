@@ -18,7 +18,7 @@ Chaque fois que vous rencontrez la forme `*-[compte].alwaysdata.net`, vous devez
 | **Administration**         |                                                                              |
 | URL                        | https://admin.alwaysdata.com                                                 |
 |                            | Email/mot de passe, [Double authentification possible]({{< ref "security/two-factor-authentication" >}})  |
-| API                        | [api.alwaysdata.com/v1]({{< ref "api" >}})                                   |
+| API                        | [api.alwaysdata.com/v1]({{< ref "api" >}}) (soumis à un *[rate limit]({{<ref "api/usage">}}#rate-limit)*)                                   |
 |                            | Clé API disponible dans *Profil > Authentification*                          |
 | **Générique**              |                                                                              |
 | DNS                        | Primaire : dns1.alwaysdata.com                                               |

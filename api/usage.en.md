@@ -14,6 +14,10 @@ $ curl --basic --user APIKEY: https://api.alwaysdata.com/v1/account/
 To use your API key, don't forget the colon (`:`) after it, meaning that the password is not needed.
 {{% /notice %}}
 
+{{% notice info %}}
+A rate limit is applied on API requests. See [here](#rate-limit) for more details.
+{{% /notice %}}
+
 ### Linked resources
 
 If you access resources linked to a user or a specific account, then you will need to specify this with your authentication while specifying one or more parameter(s):
@@ -55,8 +59,8 @@ $ curl --basic --user APIKEY: --header 'Accept: application/xml' https://api.alw
 
 ## Rate-limit
 
-A rate limiting of per minutes actions is place on these interfaces:
+A limit of actions per minute (i.e. rate limit) is set on these interfaces:
 
-- 10 requests per minutes
-- 50 if we stay connected
-- 250 for *safe* requests as `GET`
+- 10 *rpm* per minute
+- 50 *rpm* for sticky connections
+- 250 *rpm* for *safe* methods like `GET`

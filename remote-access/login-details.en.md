@@ -13,13 +13,18 @@ it was created.
 
 |Service|Information|
 |--- |--- |
-|Generic||
+|**Admin**||
+|URL|https://admin.alwaysdata.com|
+||E-mail/password, [2-factors auth ready]({{< ref "security/two-factor-authentication" >}})|
+|API|[api.alwaysdata.com/v1]({{< ref "api" >}})|
+|| API key available in *Profile > Authentication*|
+|**Generic**||
 |DNS|Primary: dns1.alwaysdata.com|
 ||Secondary: dns2.alwaysdata.com|
 |MX|Primary: mx1.alwaysdata.com (TTL: 10)|
 ||Secondary: mx2.alwaysdata.com (TTL: 20)|
 ||if VPS/dedicated server: [server].alwaysdata.net (TTL: 5)|
-|Databases||
+|**Databases**||
 |MySQL|Host: mysql-[account].alwaysdata.net|
 ||Port: 3306|
 ||Administration interface: [phpMyAdmin](https://phpmyadmin.alwaysdata.com)|
@@ -39,7 +44,7 @@ it was created.
 ||Port: 6380|
 |Memcached|Host: localhost or 127.0.0.1|
 ||Port: 11211|
-|E-mails||
+|**E-mails**||
 |Webmail|[RoundCube](https://webmail.alwaysdata.com)|
 |IMAP|Host: imap-[account].alwaysdata.net|
 ||Ports: 143, secure: 993 & 585|
@@ -48,7 +53,7 @@ it was created.
 |SMTP|Host: smtp-[account].alwaysdata.net|
 ||Ports: 25 & 587, secure: 465|
 ||Identification: e-mail (address and the password assigned to it)|
-|Remote access||
+|**Remote access**||
 |FTP|Host: ftp-[account].alwaysdata.net|
 ||Port: 21|
 ||Web interface: [net2ftp](https://net2ftp.alwaysdata.com/)|
@@ -59,5 +64,5 @@ it was created.
 ||Web access (via Shell in a box): https://ssh-[account].alwaysdata.net|
 |WebDAV|Host: webdav-[account].alwaysdata.net|
 ||Port: 80|
-|Web statistics||
+|**Web statistics**||
 |Administration interface|[Matomo](https://analytics.alwaysdata.com)|

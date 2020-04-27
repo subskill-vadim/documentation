@@ -52,3 +52,11 @@ $ curl --basic --user APIKEY: --header 'Accept: application/xml' https://api.alw
 |HTTP header|Description|Default value|
 |--- |--- |--- |
 |alwaysdata-synchronous|Request execution in synchronous mode|no|
+
+## Rate-limit
+
+A rate limiting of per minutes actions is place on these interfaces:
+
+- 10 requests per minutes
+- 50 if we stay connected
+- 250 for *safe* requests as `GET`

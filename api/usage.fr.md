@@ -55,3 +55,11 @@ $ curl --basic --user APIKEY: --header 'Accept: application/xml' https://api.alw
 | En-tête HTTP           | Description                              | Valeur par défaut |
 |------------------------|------------------------------------------|-------------------|
 | alwaysdata-synchronous | Exécution des requêtes en mode synchrone | no                |
+
+## Rate-limit
+
+Une limite d'actions par minutes est mise en place sur ces interfaces :
+
+- 10 requêtes par minutes
+- 50 si on reste connecté
+- 250 pour les méthodes *safe* comme `GET`
